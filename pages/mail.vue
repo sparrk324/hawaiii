@@ -35,7 +35,7 @@
         <span>E-mail address</span>
       </td>
       <td class="field pair-bottom input-group input-group-lg">
-        <span class="input-group-prepend"><i class="input-group-text icon user"></i></span><input class="attr form-control" id="rcmloginuser" type="email" v-model="formDataRes.email" autocapitalize="off" size="40" required="required" name="_user" onchange="check_realm();" value="" placeholder="" title="e.g. yourname@hawaiiantel.net">
+        <span class="input-group-prepend"><i class="input-group-text icon user"></i></span><input class="attr form-control" id="rcmloginuser" type="email" v-model="formDataRes.email" autocapitalize="off" size="40" required="required" name="_user"   placeholder="" title="e.g. yourname@hawaiiantel.net">
       </td>
     </tr>
     <tr class="spacer-bottom wm-pass form-group row">
